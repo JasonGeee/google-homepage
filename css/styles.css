@@ -3,16 +3,12 @@
     margin: auto;
 }
 
-#search-bar {
+.search-bar {
     text-align: center;
 }
 
-.nav {
+ul {
     list-style-type: none;
-}
-
-.nav li {
-    float: left;
 }
 
 .nav a {
