@@ -1,43 +1,257 @@
 body {
-    margin: 0;
-}
-
-.google-img {
-    margin-top: 300px;
-}
-
-.image {
-    text-align: center;
-}
-
-.search-bar {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.search {
-    padding: 10px;
-    outline: 0;
-}
-
-.nav {
+    background-color: white;
+    font-family: arial, sans-serif;
+  }
+  
+  /* Top Navigation Bar CSS */
+  .nav-contents {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-    text-decoration: none;
-}
-
-.nav a {
-    margin-right: 20px;
-}
-
-.top-link:hover {
+    justify-content: space-between;
+    padding: 10px;
+    
+    position: fixed; /* top position fixed */
+    width: 100%; /* cover left to right */
+    left: 0px;
+    top: 0px;
+    
+    /*border: 2px solid red; /* DELETE AFTER */
+  }
+  .nav-contents a {
+    text-decoration: none; /* removes underline */
+    color: inherit; /* removes blue link look */
+  }
+  
+  .nav-bar-left {
+    flex-grow: 1;
+    
+    display: flex;
+    align-items: center; /* moves the ext to center of the container/flexbox */
+    
+    /*border: 2px solid blue; /* DELETE AFTER */
+  }
+  
+  .nav-bar-right {
+    flex-grow: 1;
+    
+    padding-right: 10px;
+    
+    /*border: 2px solid green; /* DELETE AFTER */
+  }
+  
+  .nav-list-left {
+    list-style-type: none; /* removes the bullet points of list */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .nav-list-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  .nav-contents li {
+    display: inline-block; /* places listed items horizontally */
+    
+    padding: 5px;
+    margin 0 5px;
+    
+    color: #222;
+    font-size: 14px;
+  }
+  
+  .nav-contents li:hover {
     text-decoration: underline;
-}
-
-.top-app-link {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-}
+  }
+  
+  /* Google image, search bar, and buttons CSS, Grid box */
+  .center-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 2fr 1fr 1fr 1fr; 
+    
+    gap: 20px; /*space inbetween rows */
+    
+    margin: auto;
+    margin-top: 200px; /* spacing from nav bar */
+    width: 900px; /* brings grid into middle */ 
+    
+    /*border: 2px solid white;*/
+  }
+  
+  .first-row-google-img {
+    grid-column: 1/5; /* in column 1 taking all 5 columns*/
+    grid-row: 1; /* in row 1*/
+    
+    /*border: 2px solid red;*/
+  }
+  
+  .second-row-search-icon {
+    grid-column: 1;
+    grid-row: 2; /* in row 2 */
+    
+    z-index: 2; /* so icon is not covered by search bar */
+    opacity: 0.5;
+  }
+  
+  .second-row-search {
+    grid-column: 1/5;
+    grid-row: 2;
+    
+    /*border: 2px solid brown;*/
+  }
+  
+  .third-row-first-button {
+    grid-column: 2/3;  
+    grid-row: 3;
+    
+    /*border: 2px solid black;*/
+  }
+  
+  .third-row-second-button {
+    grid-column: 3/4;
+    grid-row: 3;
+    
+    /*border: 2px solid blue;*/
+  }
+  
+  .fourth-row {
+    grid-column: 2/4;
+    grid-row: 4;
+    
+    /*border: 2px solid cyan;*/
+  }
+  
+  .google-logo {
+    display: block; /* center logo */
+    margin: auto;
+  }
+  
+  #search-icon {
+    display: block;
+    margin-left: 40px;
+    margin-top: 13px;
+    z-index: 1;
+  }
+  
+  .search {
+    width: 80%;
+    height: 2.5rem;
+    padding: 0.25rem 4rem;
+    
+    display: block; /* center bar */
+    margin: auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 15px;
+  }
+  
+  .search:hover {
+    filter: drop-shadow(4px, 4px, 5px, #dfe1e5);
+  }
+  
+  .first-button {
+    width: 150px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    
+    font-size: 14px;
+    cursor: pointer;
+    
+    display: block;
+    margin-left: 25px;
+  }
+  
+    .first-button:hover {
+      border: 2px solid darkgrey;
+    }
+  
+    .first-button:visited { /* when clicked on */
+      border: 2px solid #4285f4;
+    }
+  
+  .second-button {
+    width: 150px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    
+    font-size: 14px;
+    cursor: pointer;
+    
+    display: block;
+    margin-left: 5px;
+  }
+  
+    .second-button:hover {
+      border: 2px solid darkgrey;
+    }
+  
+    .second-button:visited { /* when clicked on */
+      border: 2px solid #4285f4;
+    }
+  
+  .fourth-row {
+    text-align: center;
+  }
+    
+    .fourth-row a {
+      text-decoration: none;
+    }
+  
+    .link:hover {
+      text-decoration: underline;
+    }
+  
+  /* Bottom Navigation Footer Bar */
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px; /* making bar thicker */
+    
+    background-color: lightgrey;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    
+    /*border: 2px solid red;*/
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .bottom-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .bottom-nav li {
+    display: inline-block;
+    
+    padding: 5px 10px; /* top bottom, left right */
+    margin: 0 5px; /* top bottom, left right */
+    font-size: 14px;
+  }
+  
+  .bottom-list-left {
+    list-style-type: none;
+    text-align: left;
+    
+  }
+  
+  .bottom-list-right {
+    list-style-type: none;
+    text-align: right;
+    
+    margin: 15px;
+    padding-right: 20px;
+  }
+  
+  

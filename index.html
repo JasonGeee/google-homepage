@@ -1,45 +1,100 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Google Home Page</title>
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    </head>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Odin Project - Google Clone">
+    <meta name="keywords" content="The Odin Project, Google Homepage, JasonGeee, Jason Gutierrez">
+    <meta name="author" content="Jason Gutierrez">
     
-<body>
-    <!--Navigation bar-->
-    <div class="nav">
-        <!--<div class="nav-bar">
-            <ul>
-                <li class="nav-link"><a href="">Username</a></li>
-                <li class="nav-link"><span class="material-icons">apps</span></li>
-                <li class="nav-link"><a href="">Images</a></li>
-                <li class="nav-link"><a href="">Gmail</a></li>
-            </ul>
-        </div>-->
-        <a class="top-link">Gmail</a>
-        <a class="top-link">Images</a>
-        <a class="top-app-link"></a>
+    <!-- Media Share Metatags -->
+    <meta property="og-title" content="The odin Project - Google Homepage by JasonGeee">
+    <meta property="og-image" content="">
+    <meta property="og:url" content="https://github.com/JasonGeee">
+    
+    <!-- For mobile use -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Google - JasonGeee</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <div class="nav-contents">
+      <!-- Left nav -->
+      <div class="nav-bar-left">
+        <ul class="nav-list-left">
+          <li><a href="">About</a></li>
+          <li><a href="">Store</a></li>
+        </ul>
+      </div>
+
+      <!-- Right nav -->
+      <div class="nav-bar-right">
+        <ul class="nav-list-right">
+          <li><a href="">Gmail<a/></li>
+          <li><a href="">Images</a></li>
+          <li><a class="material-icons" href="">apps</a></li>
+          <li><button><a href="">Sign In</a></button></li>
+        </ul>
+      </div>
     </div>
-
-    <!--Gooel image and serach bar-->
-    <div class="image">
-        <img class="google-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
-
+    
+    <!-- Google image, search bar, and buttons -->
+    <div class="center-contents">
+      
+      <!-- 1st Row -->
+      <div class="first-row-google-img">
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+      </div>
+      
+      <!-- 2nd Row -->
+      <div class="second-row-search-icon">
+        <span class="material-icons" id="search-icon">search</span>
+      </div>
+      
+      <div class="second-row-search">
+        <input class="search" type="text" autofocus> <!--autofocus lets cursor go to it first when opened -->
+      </div>
+      
+      <!-- 3rd Row -->
+      <div class="third-row-first-button">
+        <button class="first-button" type="submit">Google Search</button>
+      </div>
+      
+      <div class="third-row-second-button">
+        <button class="second-button" type="submit">I'm Feeling Lucky</button>
+      </div>
+      
+      <!-- 4th Row -->
+      <div class="fourth-row">
+        <a class="link" href="">Experience the 'Hello World' in HTML & CSS!</a>
+      </div>
+    
     </div>
-
-    <div class="search-bar">
-        <form>
-            <input type="text">
-        </form>
+    
+    <!-- Bottom Navigation Footer Bar -->
+    <div class="bottom-nav">
+      <!-- Bottom nav left -->
+      <div class="bottom-nav-left">
+        <ul class="bottom-list-left">
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Business</a></li>
+          <li><a href="">How Search Works</a></li>
+        </ul>
+      </div>
+      <div class="bottom-nav-right">
+        <ul class="bottom-list-right">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </div>
     </div>
-
-    <!--Footer of page-->
-    <div class="footer">
-
-    </div>
-
-</body>
-
+    
+    
+  </body>
+  
 </html>
