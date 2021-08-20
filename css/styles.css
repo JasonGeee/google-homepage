@@ -1,24 +1,43 @@
-#img {
-    display: block;
-    margin: auto;
-    padding: auto;
+body {
+    margin: 0;
+}
+
+.google-img {
+    margin-top: 300px;
+}
+
+.image {
+    text-align: center;
 }
 
 .search-bar {
     text-align: center;
+    margin-top: 20px;
 }
 
-ul {
-    list-style-type: none;
+.search {
+    padding: 10px;
+    outline: 0;
 }
 
-.nav a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
     text-decoration: none;
 }
 
-.nav li:hover {
+.nav a {
+    margin-right: 20px;
+}
+
+.top-link:hover {
     text-decoration: underline;
+}
+
+.top-app-link {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
 }
